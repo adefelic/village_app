@@ -40,3 +40,8 @@ def tasks():
         users=users,
         groups=groups,
     )
+
+@app.route("/create/task/", methods=['POST'])
+def create_task():
+    import ipdb; ipdb.set_trace()
+    print(request.form)
