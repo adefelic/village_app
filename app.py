@@ -26,6 +26,12 @@ def groups():
 @app.route("/help-me/", methods=['GET'])
 def help_me():
     if (request.args) :
+    	with open('task.json', 'r+') as f:
+    		tasks = json.load(f)
+    		json.dumps(
+    			{"id": "todo"},
+    			{"description": request.args.get("description")},
+    			)
         # load task, group, date, user
         # new task {	
         # "tasks": [
@@ -43,7 +49,6 @@ def help_me():
         #
         # update tasks list in user obj
         #
-        # 
     tasks = _get_json('task.json')
     users = _get_json('users.json')
     groups = _get_json('groups.json')
