@@ -1,0 +1,16 @@
+[
+	{
+		"id": "g_0",
+		"name": "International School of Boston",
+		"users": [
+			"u_0"
+		]
+	},
+	{
+		"id": "g_1",
+		"name": "Ezra H. Baker Elementary School",
+		"users": [
+			"u_1"
+		]
+	}
+]

@@ -1,0 +1,36 @@
+{
+	"users": [
+		{
+			"id": "u_0",
+			"name": "adam",
+			"groups": [
+				"g_0",
+				"g_3"
+			],
+			"village": [
+				"u_1"
+			],
+			"tasks": [
+				{
+					"id": "t_0"
+				}
+			]
+		},
+		{
+			"id": "u_1",
+			"name": "audrey",
+			"groups": [
+				"g_0",
+				"g_3"
+			],
+			"village": [
+				"u_1"
+			],
+			"tasks": [
+				{
+					"id": "t_0"
+				}
+			]
+		}
+	]
+}
