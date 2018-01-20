@@ -1,16 +1,35 @@
 var users = [
 	{
 		"id": "u_0",
-		"name": adam,
+		"name": "adam",
 		"groups": [
 			// lists groups this user belongs to
 			"g_0",
 			"g_3"
-		]
+		],
 		"village": [
 			// users this user has approved
 			"u_1"
+		],
+		"tasks": [
+			{
+				"id": "t_0",
+			}
+
 		]
+	},
+	{
+		"id": "u_1",
+		"name": "audrey",
+		"groups": [
+			// lists groups this user belongs to
+			"g_0",
+			"g_3"
+		],
+		"village": [
+			// users this user has approved
+			"u_1"
+		],
 		"tasks": [
 			{
 				"id": "t_0",
@@ -40,11 +59,11 @@ var groups = [
 var tasks = [
 	{
 		"id": "t_0",
-		"description": "pick up my kid!"
-		"group": "g_0"
+		"description": "pick up my kid!",
+		"group": "g_0",
 		"created_by": "u_0",
 		"helper": "u_1",
-		"when": 0987093845098345
+		"when": 0987093845098345,
 		"expires": 98723408803240823094
 	}
 ];
