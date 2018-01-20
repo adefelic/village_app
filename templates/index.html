@@ -3,7 +3,6 @@
 	<head>
 		<!-- <link href="index.css" rel="stylesheet"> -->
 		<link href="{{ url_for('static', filename='stylesheets/index.css') }}" rel="stylesheet">
-		<img src="{{ url_for('static', filename='image.png') }}" width="200" height="150" alt="Logo" class="logo">
 	</head>
 	<body>
 
@@ -14,6 +13,8 @@
 		</script>
 
 		<div class="nav">
+			<img src="{{ url_for('static', filename='image.png') }}" width="200" height="150" alt="Logo" class="logo">
+
 			<div>
 				<br>
 				<a href="/">Home</a>
