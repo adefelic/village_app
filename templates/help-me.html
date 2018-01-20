@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<link href="help-me.css" rel="stylesheet" title="Default Style">
 		<link href="{{ url_for('static', filename='stylesheets/index.css') }}" rel="stylesheet">
 	</head>
 	<body>
-
 		<script>
 			var tasks = JSON.parse({{tasks|tojson|safe}})
 			var users = JSON.parse({{users|tojson|safe}})
@@ -48,14 +46,26 @@
 				<input type="text" name="task"><br>
 				<br>
 				Community:<br>
-				<input type="text" name="group"><br>
+				<input type="text" name="group" list="groups"><br>
+				<datalist id="groups"></datalist>
 				<br>
 				When:<br>
 				<input type="date" name="when"><br>
 				<br>
-				<input onclick="window.location.href='/form-submitted/';" type="submit" value="Submit" />
+				<button onclick="window.location.href='/form-submitted/';" type="submit" />Submit</button>
 			</form>
 		</div>
+
+		<script type="text/javascript">
+
+		  var options = '';
+
+		  for(var i = 0; i < groups.length; i++) {
+		    options += '<option value="'+ groups[i].name +'" autocomplete=\"off\"/>';
+		  	document.getElementById('groups').innerHTML = options;
+			}
+		</script>
+
 		<script type="text/javascript" src="main.js"></script>
 
 
