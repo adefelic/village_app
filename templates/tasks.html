@@ -7,6 +7,12 @@
 
 <body>
 
+  <script>
+    var tasks = JSON.parse({{tasks|tojson|safe}})
+    var users = JSON.parse({{users|tojson|safe}})
+    var groups = JSON.parse({{groups|tojson|safe}})
+  </script>
+
   <div class="nav">
     <div>
       <br>
@@ -37,17 +43,13 @@
 		<ul id="js-group-list"></ul>
 		<script type="text/javascript">
 
-      var tasks = JSON.parse({{tasks|tojson|safe}})
-      var users = JSON.parse({{users|tojson|safe}})
-      var groups = JSON.parse({{groups|tojson|safe}})
-
 			// make list items for each group
 			var groupList = document.getElementById("js-group-list");
-			for (let i = tasks.length - 1; i >= 0; i--) {
+			for (let i = tasks.tasks.length - 1; i >= 0; i--) {
 				// make an li
 				// put it in .groups
 				let groupListItem = document.createElement("li");
-				groupListItem.appendChild(document.createTextNode(tasks[i].description));
+				groupListItem.appendChild(document.createTextNode(tasks.tasks[i].description));
 				groupList.appendChild(groupListItem);
 			}
 		</script>
