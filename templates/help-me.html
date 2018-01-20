@@ -48,7 +48,8 @@
 				<input type="text" name="task"><br>
 				<br>
 				Community:<br>
-				<input type="text" name="group"><br>
+				<input type="text" name="group" list="groups"><br>
+				<datalist id="groups"></datalist>
 				<br>
 				When:<br>
 				<input type="date" name="when"><br>
@@ -56,7 +57,19 @@
 				<input onclick="window.location.href='/form-submitted/';" type="submit" value="Submit" />
 			</form>
 		</div>
+
+		<script type="text/javascript">
+
+		  var options = '';
+
+		  for(var i = 0; i < groups.length; i++) {
+		    options += '<option value="'+ groups[i]+'" />';
+		  	document.getElementById('groups').innerHTML = options;
+			}
+		</script>
+
 		<script type="text/javascript" src="main.js"></script>
+
 
 
 	</body>
