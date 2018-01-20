@@ -34,19 +34,19 @@
 		<div class="content">
 
 			<h2> Home Page </h2>
-			
+
 			<!-- Button to open the modal login form -->
 		<button onclick="document.getElementById('id01').style.display='block'">Login</button>
 
 			<!-- The Modal -->
 		<div id="id01" class="modal">
- 		<span onclick="document.getElementById('id01').style.display='none'" 
+ 		<span onclick="document.getElementById('id01').style.display='none'"
 		class="close" title="Close Modal">&times;</span>
 
   		<!-- Modal Content -->
   		<form class="modal-content animate" action="/action_page.php">
   		<div class="imgcontainer">
-      	<img src="myAvatar.png" alt="Avatar" class="avatar">
+      	<img src="{{ url_for('static', filename='MyAvatar.png') }}" alt="Avatar" class="avatar">
     	</div>
 
     	<div class="container">

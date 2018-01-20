@@ -3,7 +3,8 @@
 To get flask up and running
 
 pip install Flask
-FLASK_APP=app.py flask run
-* Running on http://localhost:5000/
+pip install -r requirements.txt
 
-Navigate to port 5000
+FLASK_APP=app.py flask run
+
+Navigate to http://localhost:5000/
