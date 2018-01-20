@@ -1,16 +1,22 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<script type="text/javascript">
-			//iterate over groups, display
-			for (var i = groups.length - 1; i >= 0; i--) {
-				groups[i];
-			}
-		</script>
-	</head>
+<head>
+	<script type="text/javascript" src="totallyrealdatabase.js"></script>
+</head>
+<body>
 	<h2> Groups </h2>
-	<ol id="js-group-list">
-	</ol>
+	<a href="index.html">Home</a>
+	<ul id="js-group-list"></ul>
+	<script type="text/javascript">
+		// make list items for each group
+		var groupList = document.getElementById("js-group-list");
+		for (let i = groups.length - 1; i >= 0; i--) {
+			// make an li
+			// put it in .groups
+			let groupListItem = document.createElement("li");
+			groupListItem.appendChild(document.createTextNode(groups[i].name)); 
+			groupList.appendChild(groupListItem);
+		}
+	</script>
+</body>
 </html>
-
-
