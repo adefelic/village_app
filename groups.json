@@ -4,6 +4,9 @@
 		"name": "International School of Boston",
 		"users": [
 			"u_0"
+		],
+		"tasks": [
+			"t_1"
 		]
 	},
 	{
@@ -11,6 +14,9 @@
 		"name": "Ezra H. Baker Elementary School",
 		"users": [
 			"u_1"
+		],
+		"tasks": [
+			"t_2"
 		]
 	}
 ]
