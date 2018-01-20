@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<link href="help-me.css" rel="stylesheet" title="Default Style">
 		<link href="{{ url_for('static', filename='stylesheets/index.css') }}" rel="stylesheet">
 	</head>
 	<body>
@@ -54,7 +53,7 @@
 				When:<br>
 				<input type="date" name="when"><br>
 				<br>
-				<input onclick="window.location.href='/form-submitted/';" type="submit" value="Submit" />
+				<button onclick="window.location.href='/form-submitted/';" type="submit" />Submit</button>
 			</form>
 		</div>
 
@@ -63,7 +62,7 @@
 		  var options = '';
 
 		  for(var i = 0; i < groups.length; i++) {
-		    options += '<option value="'+ groups[i]+'" />';
+		    options += '<option value="'+ groups[i].name +'" autocomplete=\"off\"/>';
 		  	document.getElementById('groups').innerHTML = options;
 			}
 		</script>
