@@ -1,0 +1,19 @@
+body {
+  font: 12px helvetica;
+  display: flex;
+  margin: 60px;
+}
+
+input {
+  width: 400px;
+}
+
+.nav {
+  flex: 1 1 auto;
+  max-width: 200px;
+}
+
+.content {
+  flex: 1 1 auto;
+  margin-right: 40px;
+}
