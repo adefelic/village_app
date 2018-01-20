@@ -23,12 +23,18 @@ var users = [
 var groups = [
 	{
 		"id": "g_0",
-		"name": "international school of boston",
+		"name": "International School of Boston",
 		"users": [ // lists users that belong to this group
 			"u_0"
 		]
+	},
+	{
+		"id": "g_1",
+		"name": "Ezra H. Baker Elementary School",
+		"users": [ // lists users that belong to this group
+			"u_1"
+		]
 	}
-
 ];
 
 var tasks = [
@@ -42,3 +48,5 @@ var tasks = [
 		"expires": 98723408803240823094
 	}
 ];
+
+
