@@ -50,7 +50,7 @@
 		class="close" title="Close Modal">&times;</span>
 
   		<!-- Modal Content -->
-  		<form class="modal-content animate" action="/action_page.php">
+  		<form class="modal-content animate">
   		<div class="imgcontainer">
       	<img src="{{ url_for('static', filename='MyAvatar.png') }}" alt="Avatar" class="avatar">
     	</div>
@@ -58,8 +58,21 @@
     	<div class="container">
       	<label><b>Name</b></label>
       	<input type="text" placeholder="Enter Full Name" name="name" required>
+		<script type = "text/javascript">
+ 			function WriteCookie()
+            {
+            	for(int i=0;i<users.length;i++){
+            		if(users[i] == name) {
+            			founduser = users[i]
+            			id = founduser.get(id)
+            			document.cookie = id
+            			window.location='/'
+	        	    	}
+	        		}
+            }     
+  		</script>
 
-        <button type="submit">Login</button>
+        <button onclick="WriteCookie()" type="submit">Login</button>
         <label>
         <input type="checkbox" checked="checked"> Remember me
         </label>
@@ -70,6 +83,7 @@
     </div>
   </form>
 </div>
+      
         <!--Modal login form ends -->
 
 			<section>
