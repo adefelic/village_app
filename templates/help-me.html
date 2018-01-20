@@ -32,34 +32,25 @@
 		</div>
 
 		<div class="content">
-
 			<div class='heading-container'>
 				<h1 class='heading'>Help Me</h1>
 				<p class='subheading'>Have any needs? Fill out the fields below to post them and get help from your community!</h4>
 			</div>
-			<form>
-			  <br>
-			  First name:<br>
-			  <input type="text" name="firstname"><br>
-			  <br>
-			  Last name:<br>
-			  <input type="text" name="lastname"><br>
-			  <br>
-			  Task:<br>
-			  <input type="text" name="task"><br>
-			  <br>
-			  Location:<br>
-			  <input type="text" name="location"><br>
-			  <br>
-			  When:<br>
-			  <input type="date" name="when"><br>
-			  <br>
-			  Community:<br>
-			  <input type="text" name="community"><br>
-			  <br>
-			  <input onclick="window.location.href='/form-submitted/';" type="submit" value="Submit" />
+			<form id="help-form">
+				<br>
+				What do you need?<br>
+				<input type="text" name="task"><br>
+				<br>
+				Community:<br>
+				<input type="text" name="group"><br>
+				<br>
+				When:<br>
+				<input type="date" name="when"><br>
+				<br>
+				<input onclick="window.location.href='/form-submitted/';" type="submit" value="Submit" />
 			</form>
 		</div>
+		<script type="text/javascript" src="main.js"></script>
 
 
 	</body>
