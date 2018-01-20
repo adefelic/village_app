@@ -40,7 +40,7 @@
 				<h1 class='heading'>Help Me</h1>
 				<p class='subheading'>Have any needs? Fill out the fields below to post them and get help from your community!</h4>
 			</div>
-			<form id="help-form">
+			<form id="help-form" method="post" action="{{ url_for('create_task') }}">
 				<br>
 				What do you need?<br>
 				<input type="text" name="task"><br>
@@ -52,7 +52,7 @@
 				When:<br>
 				<input type="date" name="when"><br>
 				<br>
-				<button onclick="window.location.href='/form-submitted/';" type="submit" />Submit</button>
+				<input type="submit" />
 			</form>
 		</div>
 
