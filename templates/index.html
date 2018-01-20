@@ -6,6 +6,12 @@
 	</head>
 	<body>
 
+		<script>
+			var tasks = JSON.parse({{tasks|tojson|safe}})
+			var users = JSON.parse({{users|tojson|safe}})
+			var groups = JSON.parse({{groups|tojson|safe}})
+		</script>
+
 		<div class="nav">
 			<div>
 				<br>
@@ -73,8 +79,6 @@
 			<p align="justify"> Explore the site to post a task you need help with, help someone who needs a hand, and create your own villages!
 			<section>
 	</div>
-
-	<script></script>
 
 	</body>
 </html>

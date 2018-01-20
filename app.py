@@ -5,7 +5,8 @@ import json
 
 def _get_json(path):
     with open(path) as json_data:
-        return json.loads(json_data.read())
+        json_data = json.loads(json_data.read())
+        return json.dumps(json_data)
 
 @app.route("/")
 def index():
@@ -30,6 +31,9 @@ def help_me():
 
 @app.route("/tasks/", methods=['GET'])
 def tasks():
+    tasks = _get_json('task.json')
+    users = _get_json('users.json')
+    groups = _get_json('groups.json')
     return render_template(
         'tasks.html',
         tasks=tasks,

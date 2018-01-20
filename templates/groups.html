@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<script type="text/javascript" src="totallyrealdatabase.js"></script>
 	<link href="{{ url_for('static', filename='stylesheets/index.css') }}" rel="stylesheet">
 </head>
 
 <body>
+
+	<script>
+		var tasks = JSON.parse({{tasks|tojson|safe}})
+		var users = JSON.parse({{users|tojson|safe}})
+		var groups = JSON.parse({{groups|tojson|safe}})
+	</script>
 
 	<div class="nav">
 		<div>

@@ -6,6 +6,12 @@
 	</head>
 	<body>
 
+		<script>
+			var tasks = JSON.parse({{tasks|tojson|safe}})
+			var users = JSON.parse({{users|tojson|safe}})
+			var groups = JSON.parse({{groups|tojson|safe}})
+		</script>
+
 		<div class="nav">
 			<div>
 				<br>

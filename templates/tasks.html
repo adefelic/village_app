@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<script type="text/javascript" src="totallyrealdatabase.js"></script>
 	<link href="index.css" rel="stylesheet">
   <link href="{{ url_for('static', filename='stylesheets/index.css') }}" rel="stylesheet">
 </head>
@@ -37,6 +36,11 @@
 		<h2>Tasks</h2>
 		<ul id="js-group-list"></ul>
 		<script type="text/javascript">
+
+      var tasks = JSON.parse({{tasks|tojson|safe}})
+      var users = JSON.parse({{users|tojson|safe}})
+      var groups = JSON.parse({{groups|tojson|safe}})
+
 			// make list items for each group
 			var groupList = document.getElementById("js-group-list");
 			for (let i = tasks.length - 1; i >= 0; i--) {
