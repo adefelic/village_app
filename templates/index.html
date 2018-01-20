@@ -34,8 +34,37 @@
 		<div class="content">
 
 			<h2> Home Page </h2>
-			<button type="button">Log In</button>
-			<input onclick="window.location.href='log-in.html';" type="log-in" value="Log In" />
+			
+			<!-- Button to open the modal login form -->
+		<button onclick="document.getElementById('id01').style.display='block'">Login</button>
+
+			<!-- The Modal -->
+		<div id="id01" class="modal">
+ 		<span onclick="document.getElementById('id01').style.display='none'" 
+		class="close" title="Close Modal">&times;</span>
+
+  		<!-- Modal Content -->
+  		<form class="modal-content animate" action="/action_page.php">
+  		<div class="imgcontainer">
+      	<img src="myAvatar.png" alt="Avatar" class="avatar">
+    	</div>
+
+    	<div class="container">
+      	<label><b>Name</b></label>
+      	<input type="text" placeholder="Enter Full Name" name="name" required>
+
+        <button type="submit">Login</button>
+        <label>
+        <input type="checkbox" checked="checked"> Remember me
+        </label>
+        </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+    </div>
+  </form>
+</div>
+        <!--Modal login form ends -->
 
 			<section>
 			<p align="justify"> At Woven, our mission is to help connect you to the communities that exist in your lives. </p>
