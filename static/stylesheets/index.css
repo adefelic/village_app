@@ -55,6 +55,26 @@ input {
   max-width: 200px;
 }
 
+.nav__item {
+  padding: 30px 0;
+  border-bottom: #ddd 1px solid;
+}
+
+.nav__item span {
+  font-size: 32px;
+  color: #1b621f;
+  display: block;
+  margin-bottom: 10px;
+}
+
+a:hover .nav__item span {
+  color: yellowgreen;
+}
+
+nav__item p {
+  display: inline-block;
+}
+
 a {
   color: #333 ;
   text-decoration: none;
@@ -218,19 +238,12 @@ img.avatar {
       width: 100%;
     }
 
-    .nav__item:nth-child(even) {
+    .nav__item a:nth-child(even) {
       background: #eee;
     }
 
     .nav__item {
       padding: 20px 50px;
       text-align: center;
-    }
-
-    .nav__item span {
-      display: block;
-      font-size: 32px;
-      color: #1b621f;
-      margin-bottom: 10px;
     }
 }
