@@ -18,6 +18,11 @@ input {
   margin-left: 50px;
 }
 
+li {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 /* The Modal (background) Most of the code skeleton taken from https://www.w3schools.com/howto/howto_css_login_form.asp */
 
 .modal {
@@ -142,3 +147,6 @@ img.avatar {
         width: 100%;
     }
 }
+
+
+
