@@ -44,5 +44,18 @@ def tasks():
 
 @app.route("/create/task/", methods=['POST'])
 def create_task():
-    print(request.form)
+    with open('task.json', mode='r') as feedsjson:
+        feeds = json.load(feedsjson)
+    with open('task.json', mode='w') as feedsjson:
+        entry = {
+    		"id": "t_2",
+    		"description": request.form['task'],
+    		"group": "g_1",
+    		"created_by": "u_2",
+    		"helper": "u_1",
+    		"when": "0987093845098345",
+    		"expires": "98723408803240823094"
+    	}
+        feeds.append(entry)
+        json.dump(feeds, feedsjson)
     return render_template('form-submitted.html')
