@@ -1,7 +1,8 @@
 body {
   font: 12px helvetica;
   display: flex;
-  margin: 60px;
+  margin-right: 100px;
+  margin-left: 100px;
 }
 
 input {
@@ -16,6 +17,7 @@ input {
 .content {
   flex: 1 1 auto;
   margin-left: 50px;
+  width: 400px;
 }
 
 li {
